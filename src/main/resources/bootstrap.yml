@@ -1,0 +1,13 @@
+spring:
+    profiles:
+        active: a
+    cloud:
+        consul:
+          host: 192.168.0.108
+          port: 8500
+          config:
+            format: yaml
+          discovery:
+              instance-id: ${spring.application.name}-${server.port}-${random.value}
+              prefer-ip-address: true
+              tags: version=0.1.0

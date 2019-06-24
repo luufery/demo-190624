@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: demo-even
+
+server:
+  port: 8082
